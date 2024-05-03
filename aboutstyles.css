@@ -1,0 +1,145 @@
+/* Normalize or Reset CSS */
+/* Add a reference to a reset or normalize CSS here, or include its content */
+
+/* Basic Styles */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif; /* Example font */
+}
+
+/* Navigation Bar */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    color: white;
+    background: url('/header.png') no-repeat center top;
+    background-size: cover;
+}
+.menu-item {
+    display: inline-block;
+    color: #333;
+    margin-right: 5em;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase; /* Stylistic choice */
+    cursor: pointer;
+    
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Adjust based on your logo's size */
+}
+
+
+/* Main Content */
+main {
+    padding: 2em;
+    background: #f9f9f9; /* Light background for the content */
+}
+
+.content1{
+    text-align: center;
+    color:#000000 !important;
+}
+.subtitle{
+    color:#000000
+}
+.content1 h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+}
+
+.content2 {
+    display: flex;
+
+    justify-content: space-around; /* Center items and provide space around them */
+    gap: 1em; /* Spacing between items */
+    margin-top: 1em;
+}
+
+.content2 > div {
+    flex-basis: calc(33% - 1em); /* Three items per row with spacing */
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Matching shadow as nav bar */
+}
+
+.history{
+    width: 33%;
+}
+
+.align {
+    text-align: center
+}
+
+.mission, .values, .history {
+    text-align: center
+}
+
+.align img{
+    width: 270px;
+    height: 270px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content2 > div {
+        flex-basis: calc(50% - 1em); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .content2 > div {
+        flex-basis: 100%; /* Stack items on very small screens */
+    }
+}
+
+/*footer*/
+.footer {
+    background-color: #2c2f33; /* Adjust the color to match your brand */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* This will space out the footer sections */
+    flex-wrap: wrap; /* Ensures wrapping on small screens */
+    width: 100%;
+    bottom:0px;
+
+    
+}
+
+.footer-section {
+    
+}
+
+.footer-logo {
+    width: 100px; /* Adjust as per your logo's aspect ratio */
+    margin-bottom: 10px;
+    
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #a9a9a9; /* Slightly lighter color for the text */
+}
+/* Additional styles such as hover effects, active states, images, and typography can be added */
+

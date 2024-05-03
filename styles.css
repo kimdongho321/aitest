@@ -1,0 +1,181 @@
+/* Reset some basic elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    padding-top: 56.25%; /* 16:9 화면비율 */
+    font-family: 'Sans-serif', Arial, sans-serif; /* Replace with the exact font family used */
+    color: #333; /* Replace with the exact hex color used */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: px;
+}
+
+.title-logo{
+    width: 145px;
+    height: 145px;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    background: url('/bgimg.jpeg') no-repeat center top;
+    background-size: 100% auto;
+    min-height: 100vh; 
+
+}
+
+body {
+    
+}
+
+.title-section{
+    margin: 15%;
+}
+
+.title {
+    font-family: 'Serif', Times, serif; /* Replace with the exact font family used for the title */
+    font-size: 72px; /* Adjust the font size to match the actual design */
+    color: #ffffff; /* Assuming white text */
+    letter-spacing: 3px; /* Adjust the letter spacing as needed */
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 20px; /* Adjust the font size to match the actual design */
+    color: #ffffff; /* Replace with the exact hex color used */
+    margin-bottom: 50px;
+}
+
+/* Other styles for navigation, text elements, and overlays would be added here */
+
+/* Add media queries to ensure responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 50px 0;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    /* Adjust styles for smaller screens */
+}
+
+/*top menu*/
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    color: white;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 5em;
+    color: #ccc; /* Replace with actual color */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; /* Stylistic choice */
+    
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #ccc;
+
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item:hover {
+    color: #ccc; /* Replace with hover color */
+    transform: scale(1.1);
+    text-decoration: none; 
+}
+
+.logo {
+    font-size: 36px; /* Replace with actual size */
+    font-weight: bold;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #2c2f33; /* Adjust the color to match your brand */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* This will space out the footer sections */
+    flex-wrap: wrap; /* Ensures wrapping on small screens */
+    width: 100%;
+    bottom:0px;
+
+    
+}
+
+.footer-section {
+    
+}
+
+.footer-logo {
+    width: 100px; /* Adjust as per your logo's aspect ratio */
+    margin-bottom: 10px;
+    
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #a9a9a9; /* Slightly lighter color for the text */
+}
+
+/* Add media queries for responsiveness if necessary */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
